@@ -1,0 +1,28 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Api Testing in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maraate89/workshop-api-testing-js.git"
+  },
+  "keywords": [
+    "api-testing",
+    "dojo",
+    "practice"
+  ],
+  "author": "Mariana Ramirez <ramirez.mariana@hotmail.com> (maraate89)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maraate89/workshop-api-testing-js/issues"
+  },
+  "homepage": "https://github.com/maraate89/workshop-api-testing-js#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
