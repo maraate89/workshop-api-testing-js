@@ -24,4 +24,16 @@ describe('First Api Tests', () => {
         expect(response.status).to.equal(statusCode.OK);
         expect(response.body.args).to.eql(query);
       });
+
+      it ('Consule HEAD service', async() => {
+      });
+      
+      it ('Consule PATCH service', async() => {
+      });
+
+      it ('Consule PUT service', async() => {
+      });
+
+      it ('Consule DELETE service', async() => {
+      });
 });
