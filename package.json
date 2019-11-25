@@ -1,5 +1,5 @@
 {
-  "name": "yes",
+  "name": "workshop-api-testing",
   "version": "1.0.0",
   "description": "This is a Workshop about Api Testing in JavaScript",
   "main": "index.js",
@@ -23,6 +23,11 @@
   "homepage": "https://github.com/maraate89/workshop-api-testing-js#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "http-status-codes": "^1.4.0",
     "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "superagent": "^5.1.1",
+    "superagent-promise": "^1.1.0"
   }
 }
