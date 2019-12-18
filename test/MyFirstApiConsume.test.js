@@ -25,15 +25,32 @@ describe('First Api Tests', () => {
         expect(response.body.args).to.eql(query);
       });
 
-      it ('Consule HEAD service', async() => {
+      it('consume HEAD Service', async () =>{
+
+        const response = await agent.head('https://httpbin.org/headers');
+    
+        expect(response.status).to.equal(statusCode.OK);
+        expect(response.headers).to.have.property('content-type', 'application/json');
+        expect(response.body).to.eql({});
       });
       
-      it ('Consule PATCH service', async() => {
+      it ('Consume PATCH service', async() => {
+
       });
 
-      it ('Consule PUT service', async() => {
+      it('Consume PUT Service', async () => {
+        const body = {
+          name: 'John',
+          age: '31',
+          city: 'Medellin'
+        };
+    
+        const response = await agent.put('https://httpbin.org/put').send(body);
+    
+        expect(response.status).to.equal(statusCode.OK);
+        expect(response.body.json).to.eql(body);
       });
 
-      it ('Consule DELETE service', async() => {
+      it ('Consume DELETE service', async() => {
       });
 });
